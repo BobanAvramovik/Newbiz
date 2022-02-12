@@ -1,0 +1,882 @@
+/* line 1, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+* {
+  font-family: "Monsterrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+/* line 9, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+ul {
+  list-style: none; }
+
+/* line 13, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+a {
+  text-decoration: none; }
+
+/* line 17, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #283db0;
+  margin-bottom: 60px; }
+
+/* line 24, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+h3 {
+  color: #444;
+  font-size: 24px;
+  margin-bottom: 20px; }
+
+/* line 30, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #283d50; }
+
+/* line 38, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about,
+.services,
+.why,
+.photo-gallery,
+.testimonials,
+.team,
+.clients,
+.contact-us,
+footer {
+  padding: 50px 20px; }
+  @media (min-width: 900px) {
+    /* line 38, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about,
+    .services,
+    .why,
+    .photo-gallery,
+    .testimonials,
+    .team,
+    .clients,
+    .contact-us,
+    footer {
+      padding: 100px 20px; } }
+
+/* line 55, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.modul-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  /* line 66, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .modul-wrap .modul {
+    text-align: center;
+    padding: 50px;
+    border-radius: 8px;
+    background-color: #fff; }
+    /* line 72, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .modul-wrap .modul img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 16px; }
+    /* line 78, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .modul-wrap .modul p:nth-child(2) {
+      font-size: 24px;
+      margin-bottom: 8px; }
+    /* line 83, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .modul-wrap .modul .btn {
+      margin-top: 24px; }
+      /* line 86, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .modul-wrap .modul .btn:hover {
+        border-color: #007bff;
+        color: #007bff; }
+
+/* line 96, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+header {
+  height: 75px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.3); }
+  /* line 104, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  header nav {
+    display: flex;
+    align-items: center;
+    padding: 25px 10px; }
+    /* line 109, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    header nav img {
+      height: 25px; }
+    /* line 113, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    header nav ul {
+      flex: 1;
+      justify-content: flex-end;
+      display: none; }
+      @media (min-width: 800px) {
+        /* line 113, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+        header nav ul {
+          display: flex; } }
+      /* line 121, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      header nav ul a {
+        color: #004289;
+        font-size: 14px;
+        font-size: 500;
+        padding: 0 15px;
+        margin-left: 15px; }
+
+/* line 134, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.hero {
+  padding: 150px 0;
+  background: url(/img/intro-bg.png) center bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  /* line 141, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .hero .flex-row {
+    padding: 0 32px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 141, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .hero .flex-row {
+        flex-direction: row; } }
+  /* line 151, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .hero h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 32px;
+    text-align: center; }
+    @media (min-width: 1000px) {
+      /* line 151, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .hero h2 {
+        text-align: initial;
+        font-size: 48px; } }
+  /* line 162, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .hero .left {
+    flex: 1;
+    order: 2;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 162, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .hero .left {
+        order: 1; } }
+  /* line 172, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .hero .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 172, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .hero .buttons {
+        flex-direction: row; } }
+    /* line 180, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .hero .buttons .btn {
+      text-align: center;
+      width: 200px;
+      margin-bottom: 16px; }
+      @media (min-width: 1000px) {
+        /* line 180, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+        .hero .buttons .btn {
+          margin-right: 16px; } }
+  /* line 190, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .hero img {
+    display: flex;
+    flex: 1;
+    order: 1;
+    width: 50%; }
+    @media (min-width: 1000px) {
+      /* line 190, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .hero img {
+        order: 2; } }
+
+/* line 204, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about img {
+  width: 60%; }
+  @media (min-width: 900px) {
+    /* line 204, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about img {
+      width: 100%; } }
+
+/* line 211, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about h2 {
+  text-align: center; }
+
+/* line 215, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about p {
+  line-height: 1.7; }
+
+/* line 219, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about .flex-row {
+  gap: 50px;
+  flex-direction: column; }
+  @media (min-width: 900px) {
+    /* line 219, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about .flex-row {
+      flex-direction: row; } }
+
+/* line 227, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about .left,
+.about .right {
+  flex: 1; }
+
+/* line 233, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about .left .flex-row {
+  gap: 0;
+  flex-direction: column;
+  margin-top: 32px;
+  align-items: center; }
+  @media (min-width: 500px) {
+    /* line 233, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about .left .flex-row {
+      flex-direction: row; } }
+
+/* line 243, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about .left .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; }
+  @media (min-width: 500px) {
+    /* line 243, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about .left .info {
+      margin-top: 0;
+      align-items: initial; } }
+  /* line 254, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .about .left .info p {
+    color: #444;
+    font-size: 14px; }
+
+/* line 260, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about .left i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  transition: 500ms ease all;
+  color: #007bff;
+  font-size: 24px; }
+  @media (min-width: 500px) {
+    /* line 260, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about .left i {
+      margin-right: 16px; } }
+  /* line 275, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .about .left i:hover {
+    background-color: #007bff;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer; }
+
+/* line 288, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about-1 .left {
+  text-align: center; }
+  @media (min-width: 500px) {
+    /* line 288, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about-1 .left {
+      text-align: initial; } }
+
+/* line 298, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about-1 .right,
+.about-3 .right {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 900px) {
+    /* line 298, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about-1 .right,
+    .about-3 .right {
+      align-items: start; } }
+
+/* line 308, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about-2 .left {
+  order: 2;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 900px) {
+    /* line 308, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about-2 .left {
+      order: 1;
+      align-items: start; } }
+
+/* line 318, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about-2 .right {
+  order: 1; }
+  @media (min-width: 900px) {
+    /* line 318, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .about-2 .right {
+      order: 2; } }
+
+/* line 328, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.about-2 p,
+.about-3 p {
+  margin-bottom: 20px; }
+
+/* line 335, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.services {
+  background-color: #ecf5ff; }
+  /* line 338, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .services .container {
+    max-width: 900px; }
+  /* line 342, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .services h2 {
+    text-align: center; }
+  /* line 346, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .services .grid {
+    max-width: 600px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    row-gap: 50px; }
+    @media (min-width: 800px) {
+      /* line 346, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .services .grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%; } }
+  /* line 358, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .services .flex-row {
+    cursor: pointer;
+    box-shadow: 0 10px 20px 0 rgba(68, 88, 144, 0.1);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    background-color: #fff;
+    transition: 500ms ease all; }
+    /* line 368, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .services .flex-row:hover {
+      transform: translateY(-4px); }
+    /* line 372, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .services .flex-row h3 {
+      font-size: 18px; }
+    /* line 376, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .services .flex-row p {
+      font-size: 14px;
+      line-height: 1.7; }
+    /* line 381, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .services .flex-row i {
+      font-size: 64px;
+      position: absolute;
+      left: -10px;
+      display: flex;
+      align-self: center; }
+    /* line 389, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .services .flex-row .right {
+      margin-left: 40px; }
+
+/* line 397, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.why {
+  background-color: #004899;
+  color: #fff; }
+  /* line 401, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .why h2, .why h3 {
+    color: #fff;
+    text-align: center; }
+  /* line 406, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .why .flex-row {
+    margin-top: 60px;
+    gap: 60px; }
+  /* line 411, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .why .write-up {
+    margin: 0 auto;
+    max-width: 600px;
+    flex-direction: column; }
+    @media (min-width: 900px) {
+      /* line 411, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .why .write-up {
+        max-width: 100%;
+        flex-direction: row; } }
+    /* line 420, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .write-up .col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      cursor: pointer;
+      padding: 40px;
+      border-radius: 12px;
+      background-color: #00458f;
+      text-align: center;
+      transition: 500ms ease all; }
+      /* line 432, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .why .write-up .col:hover {
+        background-color: #003b7a; }
+        /* line 435, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+        .why .write-up .col:hover span {
+          border-color: #004899; }
+    /* line 442, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .write-up span {
+      max-width: 100%;
+      margin-top: auto;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent; }
+    /* line 449, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .write-up i {
+      font-size: 50px; }
+    /* line 453, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .write-up h3 {
+      margin: 16px 0; }
+    /* line 457, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .write-up p {
+      font-size: 14px;
+      margin-bottom: 32px; }
+  /* line 463, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .why .analytics {
+    flex-direction: column;
+    margin-top: 90px;
+    justify-content: space-evenly;
+    align-items: center; }
+    @media (min-width: 700px) {
+      /* line 463, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .why .analytics {
+        flex-direction: row; } }
+    /* line 472, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .analytics span {
+      display: block;
+      text-align: center; }
+    /* line 477, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .analytics .number {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    /* line 483, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .why .analytics .title {
+      font-size: 14px; }
+
+/* line 492, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.photo-gallery h2 {
+  text-align: center; }
+
+/* line 496, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.photo-gallery .grid {
+  grid-template-columns: 1fr;
+  grid-auto-rows: 125px;
+  gap: 16px; }
+  @media (min-width: 600px) {
+    /* line 496, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .photo-gallery .grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) {
+    /* line 496, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .photo-gallery .grid {
+      grid-template-columns: repeat(3, 1fr); } }
+
+/* line 510, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.photo-gallery .col {
+  position: relative; }
+  /* line 513, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .photo-gallery .col img {
+    position: relative;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px; }
+  /* line 522, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .photo-gallery .col .bg {
+    border-radius: 12px;
+    transition: 500ms ease all;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  /* line 531, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .photo-gallery .col .content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms ease all;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    /* line 544, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .photo-gallery .col .content p:nth-child(1) {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 4px; }
+    /* line 550, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .photo-gallery .col .content p:nth-child(2) {
+      margin-bottom: 4px; }
+    /* line 554, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .photo-gallery .col .content i {
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: #004289; }
+  /* line 564, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .photo-gallery .col:hover .bg {
+    background-color: rgba(0, 59, 122, 0.7); }
+  /* line 568, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .photo-gallery .col:hover .content {
+    opacity: 1; }
+
+/* line 574, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.photo-gallery .photo-1 {
+  grid-row: span 3; }
+
+/* line 578, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.photo-gallery .photo-2,
+.photo-gallery .photo-6,
+.photo-gallery .photo-7,
+.photo-gallery .photo-8,
+.photo-gallery .photo-9 {
+  grid-row: span 2; }
+
+/* line 586, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.photo-gallery .photo-3,
+.photo-gallery .photo-4,
+.photo-gallery .photo-5 {
+  grid-row: span 5; }
+
+/* line 596, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.testimonials {
+  background-color: #dcf5ff;
+  box-shadow: inset 0 0 12px 0 #rgba 0, 0, 0 rgba(68, 88, 144, 0.1); }
+  /* line 600, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .testimonials h2 {
+    text-align: center; }
+  /* line 604, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .testimonials .owl-carousel {
+    max-width: 800px;
+    margin: 0 auto; }
+  /* line 609, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .testimonials img {
+    width: 120px !important;
+    height: 120px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin: 0 0 20px 0; }
+    @media (min-width: 600px) {
+      /* line 609, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .testimonials img {
+        margin: 0 20px 0 0; } }
+  /* line 620, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .testimonials .flex-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    @media (min-width: 600px) {
+      /* line 620, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .testimonials .flex-row {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: start; } }
+    /* line 630, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .testimonials .flex-row h2 {
+      font-size: 20px;
+      color: #111;
+      margin: 0 0 8px 0; }
+      @media (min-width: 600px) {
+        /* line 630, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+        .testimonials .flex-row h2 {
+          text-align: start; } }
+    /* line 639, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .testimonials .flex-row h4 {
+      font-weight: 300;
+      margin: 0 0 8px 0;
+      color: #999;
+      font-size: 14px; }
+    /* line 646, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .testimonials .flex-row p {
+      font-family: sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #444; }
+
+/* line 658, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.team h2 {
+  text-align: center; }
+
+/* line 662, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.team .flex-row {
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+/* line 668, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.team .col {
+  position: relative;
+  flex-basis: 80%; }
+  @media (min-width: 600px) {
+    /* line 668, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .team .col {
+      flex-basis: 43%; } }
+  @media (min-width: 900px) {
+    /* line 668, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .team .col {
+      flex-basis: 21%; } }
+  /* line 679, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .team .col:hover .bg {
+    background-color: rgba(0, 123, 255, 0.5); }
+  /* line 683, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .team .col:hover .info {
+    margin-top: 0;
+    opacity: 1; }
+
+/* line 690, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.team img {
+  display: block;
+  width: 100%;
+  border-radius: 50%; }
+
+/* line 696, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.team .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 50%;
+  transition: 500ms ease all; }
+
+/* line 705, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.team .info {
+  transition: 500ms ease all;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+  /* line 719, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .team .info p:nth-child(1) {
+    margin-bottom: 8px;
+    font-weight: 700; }
+  /* line 724, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .team .info p:nth-child(2) {
+    margin-bottom: 12px;
+    font-style: italic; }
+
+/* line 734, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.clients {
+  background-color: #ecf5ff;
+  box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1); }
+  /* line 738, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .clients h2 {
+    text-align: center; }
+  /* line 742, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .clients .flex-row {
+    flex-wrap: wrap; }
+  /* line 746, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .clients .col {
+    max-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d6eaff;
+    border-right: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    background-color: #fff;
+    padding: 64px;
+    flex-basis: 100%; }
+    @media (min-width: 500px) {
+      /* line 746, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .clients .col {
+        border-left: none;
+        flex-basis: 50%; } }
+    @media (min-width: 900px) {
+      /* line 746, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+      .clients .col {
+        flex-basis: 25%; } }
+    /* line 767, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .clients .col:hover img {
+      transform: scale(1.2); }
+    /* line 772, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .clients .col img {
+      max-width: 100%;
+      height: auto;
+      transition: 500ms ease all; }
+  /* line 779, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .clients .col:nth-child(1) {
+    border-top: 1px solid #d6eaff; }
+  @media (min-width: 500px) {
+    /* line 783, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .clients .col:nth-child(2) {
+      border-top: 1px solid #d6eaff; } }
+  @media (min-width: 500px) {
+    /* line 789, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .clients .col:nth-child(odd) {
+      border-left: 1px solid #d6eaff; } }
+  @media (min-width: 900px) {
+    /* line 789, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .clients .col:nth-child(odd) {
+      border-left: none; } }
+  @media (min-width: 900px) {
+    /* line 798, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .clients .col:nth-child(3),
+    .clients .col:nth-child(4) {
+      border-top: 1px solid #d6eaff; } }
+  @media (min-width: 900px) {
+    /* line 805, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .clients .col:nth-child(1),
+    .clients .col:nth-child(5) {
+      border-left: 1px solid #d6eaff; } }
+
+/* line 817, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us h2,
+.contact-us p {
+  text-align: center; }
+
+/* line 822, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us p {
+  margin-bottom: 60px; }
+
+/* line 826, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us input,
+.contact-us button {
+  display: block; }
+
+/* line 831, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da; }
+  /* line 837, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .contact-us input:focus,
+  .contact-us textarea:focus {
+    outline: none; }
+
+/* line 842, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us input {
+  margin-bottom: 16px; }
+
+/* line 846, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us textarea {
+  height: 100%;
+  resize: none; }
+
+/* line 851, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us form {
+  max-width: 700px;
+  margin: 0 auto; }
+
+/* line 857, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us .flex-row {
+  flex-direction: column; }
+  @media (min-width: 500px) {
+    /* line 857, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+    .contact-us .flex-row {
+      flex-direction: row;
+      gap: 32px; } }
+
+/* line 865, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.contact-us .btn {
+  margin-top: 16px;
+  font-weight: 400; }
+  /* line 869, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .contact-us .btn:hover {
+    color: #007bff;
+    border-color: #007bff; }
+
+/* line 878, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+footer {
+  color: #fff;
+  background-color: #004a99; }
+  /* line 882, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /* line 888, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  footer ul {
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /* line 894, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  footer li {
+    padding: 0 15px;
+    margin-bottom: 16px; }
+  /* line 899, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  footer a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff; }
+  /* line 905, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  footer i {
+    cursor: pointer;
+    font-size: 30px; }
+  /* line 910, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  footer p {
+    text-align: center; }
+
+/* line 917, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* line 922, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.display-none {
+  display: none; }
+
+/* line 926, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.flex-row {
+  display: flex; }
+
+/* line 930, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.grid {
+  display: grid; }
+
+/* line 934, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 45px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: .5s ease all; }
+  /* line 945, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .btn:hover {
+    background-color: transparent;
+    border-color: #fff; }
+
+/* line 951, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.btn-light {
+  background-color: transparent;
+  border-color: #fff; }
+  /* line 955, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+  .btn-light:hover {
+    background-color: #007bff;
+    border-color: transparent; }
+
+/* line 961, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.pink-text {
+  color: #ff689b; }
+
+/* line 965, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.yellow-text {
+  color: #e9bf06; }
+
+/* line 969, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.teal-text {
+  color: #3fcdc7; }
+
+/* line 973, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.green-text {
+  color: #41cf2e; }
+
+/* line 977, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.limeGreen-text {
+  color: #d6ff22; }
+
+/* line 981, ../../Users/Boban/Desktop/Projects/Newbiz/scss/style.scss */
+.blue-text {
+  color: #4680ff; }
+
+/*# sourceMappingURL=style.css.map */
